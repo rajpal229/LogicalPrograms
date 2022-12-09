@@ -8,7 +8,7 @@
             while (Flag)
             {
                 Console.WriteLine("1. FibonacciSeries\n2. PerfectNumber\n3. Prime Number" +
-                    "\n4. Reverse A Number\n5. Coupon Numbers");
+                    "\n4. Reverse A Number\n5. Coupon Numbers\n6. Stopwatch");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -31,6 +31,10 @@
                     case 5:
                         CouponNumbers couponNumbers = new CouponNumbers();
                         couponNumbers.GenerateCoupon(10);
+                        break;
+                    case 6:
+                        Stopwatch stopwatch = new Stopwatch();
+                        stopwatch.StimulateStopWatch();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Input");
