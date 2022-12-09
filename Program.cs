@@ -8,7 +8,7 @@
             while (Flag)
             {
                 Console.WriteLine("1. FibonacciSeries\n2. PerfectNumber\n3. Prime Number" +
-                    "\n4. Reverse A Number");
+                    "\n4. Reverse A Number\n5. Coupon Numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,6 +27,10 @@
                     case 4:
                         Reverse_A_Number reverse_A_Number = new Reverse_A_Number();
                         reverse_A_Number.reverse();
+                        break;
+                    case 5:
+                        CouponNumbers couponNumbers = new CouponNumbers();
+                        couponNumbers.GenerateCoupon(10);
                         break;
                     default:
                         Console.WriteLine("Enter Valid Input");
