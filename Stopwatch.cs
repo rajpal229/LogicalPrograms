@@ -13,7 +13,7 @@ namespace LogicalProblems
         {
             start_time = DateTime.Now;
             Console.WriteLine("Stopwatch has started ");
-            Console.WriteLine("press 2 to stope the watch ");
+            Console.WriteLine("press 0 to stop the watch ");
             Selection();
 
         }
@@ -52,7 +52,6 @@ namespace LogicalProblems
         }
         public void StimulateStopWatch()
         {
-            Console.WriteLine("~~~~~~~~~~STOPWATCH~~~~~~~~~~~~~~");
             Console.WriteLine("Press 1. to Start Stopwatch");
             Selection();
         }
